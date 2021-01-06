@@ -1,0 +1,103 @@
+<xml>
+<set name="HXCPP_API_LEVEL" value="400" />
+<files id="haxe">
+<compilerflag value="-Iinclude"/>
+  <file name="src/reservedseating/ReservedSeating.cpp" >
+   <depend name="include/reservedseating/ReservedSeating.h"/>
+  </file>
+  <file name="src/haxe/iterators/ArrayKeyValueIterator.cpp" >
+   <depend name="include/haxe/iterators/ArrayKeyValueIterator.h"/>
+  </file>
+  <file name="src/haxe/iterators/ArrayIterator.cpp" >
+   <depend name="include/haxe/iterators/ArrayIterator.h"/>
+  </file>
+  <file name="src/haxe/ds/_Vector/Vector_Impl_.cpp" >
+   <depend name="include/haxe/ds/_Vector/Vector_Impl_.h"/>
+  </file>
+  <file name="src/haxe/ValueException.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/ValueException.h"/>
+  </file>
+  <file name="src/haxe/NativeStackTrace.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/NativeStackTrace.h"/>
+   <depend name="include/haxe/StackItem.h"/>
+  </file>
+  <file name="src/haxe/Exception.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/NativeStackTrace.h"/>
+   <depend name="include/haxe/StackItem.h"/>
+   <depend name="include/haxe/ValueException.h"/>
+   <depend name="include/haxe/_CallStack/CallStack_Impl_.h"/>
+  </file>
+  <file name="src/haxe/IMap.cpp" >
+   <depend name="include/haxe/IMap.h"/>
+  </file>
+  <file name="src/haxe/_CallStack/CallStack_Impl_.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/NativeStackTrace.h"/>
+   <depend name="include/haxe/StackItem.h"/>
+   <depend name="include/haxe/_CallStack/CallStack_Impl_.h"/>
+  </file>
+  <file name="src/haxe/StackItem.cpp" >
+   <depend name="include/haxe/StackItem.h"/>
+  </file>
+  <file name="src/Type.cpp" >
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/Type.h"/>
+   <depend name="include/ValueType.h"/>
+   <depend name="include/haxe/Exception.h"/>
+  </file>
+  <file name="src/ValueType.cpp" >
+   <depend name="include/ValueType.h"/>
+  </file>
+  <file name="src/StringBuf.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+  </file>
+  <file name="src/Std.cpp" >
+   <depend name="include/Std.h"/>
+  </file>
+  <file name="src/Reflect.cpp" >
+   <depend name="include/Reflect.h"/>
+   <depend name="include/haxe/Exception.h"/>
+  </file>
+  <file name="src/IntIterator.cpp" >
+   <depend name="include/IntIterator.h"/>
+  </file>
+  <file name="src/_EnumValue/EnumValue_Impl_.cpp" >
+   <depend name="include/_EnumValue/EnumValue_Impl_.h"/>
+  </file>
+  <file name="src/__boot__.cpp" >
+   <depend name="include/haxe/StackItem.h"/>
+   <depend name="include/ValueType.h"/>
+  </file>
+  <file name="src/__files__.cpp" if='HXCPP_DEBUGGER'>
+  </file>
+   <file name="${HXCPP}/src/hx/NoFiles.cpp" unless="HXCPP_DEBUGGER" />
+  <file name="src/__resources__.cpp" >
+  </file>
+</files>
+<files id="__lib__">
+<compilerflag value="-Iinclude"/>
+  <file name="src/__lib__.cpp" >
+  </file>
+</files>
+<files id="__main__">
+<compilerflag value="-Iinclude"/>
+  <file name="src/__main__.cpp" >
+  </file>
+</files>
+<files id="__resources__">
+</files>
+<files id="__externs__">
+</files>
+<set name="HAXE_OUTPUT" value="output" />
+<include name="${HXCPP}/build-tool/BuildCommon.xml"/>
+<error value="Hxcpp is out of date - please update" unlessApi="400" />
+</xml>
