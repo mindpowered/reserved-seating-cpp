@@ -128,7 +128,11 @@ public:
 			param4->setStdString(tableId);
 			myargs.push_back(param4);
 			::maglev::CppAny param5 = new ::maglev::CppAny_obj();
-			param5->setMap(geometry);
+			param5->makeMap();
+			for (auto const& item : geometry)
+			{
+				param5->setMapValue(item.first, item.second);
+			}
 			myargs.push_back(param5);
 			bus->call("ReservedSeating.CreateSeat", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
 		});
@@ -186,7 +190,11 @@ public:
 			param2->setDouble(maxSeats);
 			myargs.push_back(param2);
 			::maglev::CppAny param3 = new ::maglev::CppAny_obj();
-			param3->setMap(geometry);
+			param3->makeMap();
+			for (auto const& item : geometry)
+			{
+				param3->setMapValue(item.first, item.second);
+			}
 			myargs.push_back(param3);
 			bus->call("ReservedSeating.CreateTable", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
 		});
@@ -332,7 +340,11 @@ public:
 			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 			std::vector<::maglev::CppAny> myargs;
 			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
-			param0->setMap(data);
+			param0->makeMap();
+			for (auto const& item : data)
+			{
+				param0->setMapValue(item.first, item.second);
+			}
 			myargs.push_back(param0);
 			::maglev::CppAny param1 = new ::maglev::CppAny_obj();
 			param1->setBool(complete);
@@ -353,7 +365,11 @@ public:
 			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 			std::vector<::maglev::CppAny> myargs;
 			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
-			param0->setMap(data);
+			param0->makeMap();
+			for (auto const& item : data)
+			{
+				param0->setMapValue(item.first, item.second);
+			}
 			myargs.push_back(param0);
 			::maglev::CppAny param1 = new ::maglev::CppAny_obj();
 			param1->setBool(complete);
@@ -374,7 +390,11 @@ public:
 			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 			std::vector<::maglev::CppAny> myargs;
 			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
-			param0->setMap(data);
+			param0->makeMap();
+			for (auto const& item : data)
+			{
+				param0->setMapValue(item.first, item.second);
+			}
 			myargs.push_back(param0);
 			::maglev::CppAny param1 = new ::maglev::CppAny_obj();
 			param1->setBool(complete);
@@ -395,7 +415,11 @@ public:
 			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 			std::vector<::maglev::CppAny> myargs;
 			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
-			param0->setMap(data);
+			param0->makeMap();
+			for (auto const& item : data)
+			{
+				param0->setMapValue(item.first, item.second);
+			}
 			myargs.push_back(param0);
 			::maglev::CppAny param1 = new ::maglev::CppAny_obj();
 			param1->setBool(complete);
@@ -416,7 +440,11 @@ public:
 			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 			std::vector<::maglev::CppAny> myargs;
 			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
-			param0->setMap(data);
+			param0->makeMap();
+			for (auto const& item : data)
+			{
+				param0->setMapValue(item.first, item.second);
+			}
 			myargs.push_back(param0);
 			::maglev::CppAny param1 = new ::maglev::CppAny_obj();
 			param1->setBool(complete);

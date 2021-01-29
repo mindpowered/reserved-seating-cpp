@@ -117,11 +117,19 @@ class HXCPP_CLASS_ATTRIBUTES CppAny_obj : public ::hx::Object
 		bool isArray();
 		::Dynamic isArray_dyn();
 
+		void makeMap();
+		::Dynamic makeMap_dyn();
+
 		void setMap( ::haxe::ds::StringMap data);
 		::Dynamic setMap_dyn();
 
 		 ::haxe::ds::StringMap getMap();
 		::Dynamic getMap_dyn();
+
+		bool isMap();
+		::Dynamic isMap_dyn();
+
+		void setMapValue( hx::StdString key, ::maglev::CppAny value);
 
 		 ::maglev::CppAny getMapValue( hx::StdString key);
 
