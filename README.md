@@ -9,19 +9,16 @@ Contents
 ========
 
 * [Source Code and Documentation](#source-code-and-documentation)
-* [Licensing](#licensing)
 * [About](#about)
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Support](#support)
+* [Licensing](#licensing)
 
 # Source Code and Documentation
 - Source Code: [https://github.com/mindpowered/reserved-seating-cpp](https://github.com/mindpowered/reserved-seating-cpp)
 - Documentation: [https://mindpowered.github.io/reserved-seating-cpp](https://mindpowered.github.io/reserved-seating-cpp)
-
-# Licensing
-To obtain a version of this package under the MIT License, follow the instructions to [get a license][purchase]. The MIT License has no restrictions on commercial use and permits reuse within proprietary software.
 
 # About
 Reserved seating is when each event ticket has a specific seat. That is, attendees will know where they will sit ahead of time. Seats are usually identified by row and seat using numbers or letters.
@@ -91,10 +88,13 @@ We are here to support using this package. If it doesn't do what you're looking 
 
 There is also a public [Issue Tracker][bugs] available for this package.
 
+# Licensing
+This package is released under the MIT License.
+
 
 
 [bugs]: https://github.com/mindpowered/reserved-seating-cpp/issues
-[contact]: https://mindpowered.dev/support.html?ref=reserved-seating-cpp/
+[contact]: https://mindpowered.dev/support/?ref=reserved-seating-cpp/
 [docs]: https://mindpowered.github.io/reserved-seating-cpp/
 [licensing]: https://mindpowered.dev/?ref=reserved-seating-cpp
 [purchase]: https://mindpowered.dev/purchase/
